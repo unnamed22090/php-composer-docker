@@ -1,7 +1,7 @@
 version: '3'
 services:
   php_composer:
-    image: php_composer:latest
+    image: unnamed22090/php_composer:latest
     build:
       dockerfile: Dockerfile
       context: .
