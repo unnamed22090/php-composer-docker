@@ -1,0 +1,11 @@
+version: '3'
+services:
+  php_composer:
+    image: php_composer:latest
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args:
+        time_zone: ${TimeZone}
+    env_file:
+      - .env
